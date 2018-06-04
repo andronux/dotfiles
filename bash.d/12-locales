@@ -1,0 +1,8 @@
+if ( locale -a | grep -qiE '^en_US.utf-?8$' ); then
+    LANG='en_US.UTF-8'
+    LANGUAGE=$LANG
+    LC_ALL=$LANG
+    LC_LANG=$LANG
+    export LC_ALL LANG
+fi
+
